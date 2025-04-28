@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Clarence Babiano - Web Developer</title>
     <link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
     <link rel="icon" href="{{ asset('public/images/image.png') }}" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/0a5161f91a.js" crossorigin="anonymous"></script>
@@ -82,6 +83,7 @@
   <div class="hidden md:flex space-x-6">
     <a href="#landing" class="nav-link text-white font-bold hover:text-cyan-300">Home</a>
     <a href="#about" class="nav-link text-white font-bold hover:text-cyan-300">About Me</a>
+    <a href="#skills" class="nav-link text-white font-bold hover:text-cyan-300">Skills</a>
     <a href="#certifications" class="nav-link text-white font-bold hover:text-cyan-300">Certifications</a>
     <a href="#projects" class="nav-link text-white font-bold hover:text-cyan-300">Projects</a>
     <a href="#contact" class="nav-link text-white font-bold hover:text-cyan-300">Contact Me</a>
@@ -94,6 +96,7 @@
   <div class="flex flex-col items-center justify-center h-full space-y-8 text-center px-4">
     <a href="#landing" class="text-white-300 font-extrabold text-xl hover:text-white drop-shadow-[0_0_8px_#0ff]">Home</a>
     <a href="#about" class="text-white-300 font-extrabold text-xl hover:text-white drop-shadow-[0_0_8px_#0ff]">About Me</a>
+    <a href="#skills" class="nav-link text-white font-bold hover:text-cyan-300">Skills</a>
     <a href="#certifications" class="text-white-300 font-extrabold text-xl hover:text-white drop-shadow-[0_0_8px_#0ff]">Certifications</a>
     <a href="#projects" class="text-white-300 font-extrabold text-xl hover:text-white drop-shadow-[0_0_8px_#0ff]">Projects</a>
     <a href="#contact" class="text-white-300 font-extrabold text-xl hover:text-white drop-shadow-[0_0_8px_#0ff]">Contact Me</a>
@@ -107,7 +110,7 @@
   <div class="flex flex-col md:flex-row items-center justify-between w-full gap-16 relative z-10">
     <!-- Text Section -->
     <div class="flex-1 text-left" data-aos="fade-down-right" data-aos-delay="200" data-aos-duration="800">
-      <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold text-cyan-400 drop-shadow-[0_0_10px_#00ffff]">Hi, I'm Clarence 👨‍💻</h1>
+      <h1 class="text-5xl sm:text-6xl md:text-7xl font-bold text-cyan-400 drop-shadow-[0_0_10px_#00ffff]">Hi, I'm Clarence</h1>
       <span id="typing-text" class="drop-fade delay-2 block text-3xl sm:text-4xl md:text-3xl mt-6 text-cyan-300 drop-shadow-[0_0_6px_#00ffff]">Web & Mobile Dev</span>
       <p class="drop-fade delay-3 text-xl sm:text-2xl mt-6 text-gray-300 drop-shadow-[0_0_10px_#00ffff] mb-20 max-w-3xl leading-relaxed">
         Welcome to my personal page. I'm an FEU student taking <span class="underline">Bachelor of Science in Information Technology</span> specializing in <span class="underline">Web and Mobile App Development.</span>
@@ -123,11 +126,100 @@
   </div>
 </section>
 
-<section id="about" class="py-20 px-6 md:px-24 relative">
+<section id="about" class="py-20 px-6 md:px-24 relative overflow-x-hidden">
 
-  <h2 class="pt-10 text-center text-3xl font-bold text-cyan-400 drop-shadow-[0_0_10px_#00ffff]">About Me</h2>
+  <h2 class="pt-10 text-center text-4xl font-extrabold text-cyan-400 drop-shadow-[0_0_20px_#00ffff] tracking-widest uppercase">About Me</h2>
+  
+  <p class="pt-10 text-center text-white text-lg drop-shadow-[0_0_10px_#00ffff] mb-20 max-w-4xl mx-auto">
+    Welcome to my journey. Since 2010, I’ve been navigating the evolving world of technology — growing from a curious explorer to a dedicated developer and leader. This is just the beginning.
+  </p>
+
+  <!-- Roadmap Line -->
+  <div class="relative w-full flex flex-col items-center">
+
+    <!-- Line -->
+    <div class="absolute w-1 bg-gradient-to-b from-cyan-400 to-teal-700 h-full"></div>
+
+    <!-- Roadmap Items -->
+    <div class="flex flex-col gap-20 z-999">
+
+      <!-- 2017 -->
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-6" data-aos="fade-right" data-aos-delay="100">
+        <div class="text-2xl font-bold text-cyan-400 min-w-[80px] text-center md:text-right drop-shadow-[0_0_15px_#00ffff]">2017</div>
+        <div class="bg-white/10 border-l-4 border-cyan-400 p-6 rounded-lg backdrop-blur-md max-w-md">
+          <h3 class="text-white font-semibold text-xl mb-2">👾 First Encounter with Programming</h3>
+          <p class="text-white/70 text-sm">When I was 14, I saw someone creating an application by coding. It sparked my interest and decided to pursue a Programming degree. That year, I learned the basics using Visual Basic and successfully created my first game-inspired program.</p>
+        </div>
+      </div>
+
+      <!-- 2019 -->
+      <div class="flex flex-col md:flex-row-reverse items-center md:items-start gap-6" data-aos="fade-left" data-aos-delay="200">
+        <div class="text-2xl font-bold text-cyan-400 min-w-[80px] text-center md:text-left drop-shadow-[0_0_15px_#00ffff]">2019</div>
+        <div class="bg-white/10 border-r-4 border-cyan-400 p-6 rounded-lg backdrop-blur-md max-w-md">
+          <h3 class="text-white font-semibold text-xl mb-2">👨‍💻 Became the Vice-President of Computer Club</h3>
+          <p class="text-white/70 text-sm">I joined a club during my senior year. A friend invited me to run for a position, and I became the vice-president. Sadly, I couldn't do much due to the pandemic outbreak.</p>
+        </div>
+      </div>
+
+      <!-- 2020 -->
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-6" data-aos="fade-right" data-aos-delay="300">
+        <div class="text-2xl font-bold text-cyan-400 min-w-[80px] text-center md:text-right drop-shadow-[0_0_15px_#00ffff]">2020</div>
+        <div class="bg-white/10 border-l-4 border-cyan-400 p-6 rounded-lg backdrop-blur-md max-w-md">
+          <h3 class="text-white font-semibold text-xl mb-2">🧪 Experimenting with Different Programming Languages</h3>
+          <p class="text-white/70 text-sm">Before starting college, I experimented by following YouTube tutorials and successfully created an Image Recognition project using OpenCV and Python.</p>
+        </div>
+      </div>
+
+      <!-- 2022 -->
+      <div class="flex flex-col md:flex-row-reverse items-center md:items-start gap-6" data-aos="fade-left" data-aos-delay="400">
+        <div class="text-2xl font-bold text-cyan-400 min-w-[80px] text-center md:text-left drop-shadow-[0_0_15px_#00ffff]">2022</div>
+        <div class="bg-white/10 border-r-4 border-cyan-400 p-6 rounded-lg backdrop-blur-md max-w-md">
+          <h3 class="text-white font-semibold text-xl mb-2">🎓 IT Student Era</h3>
+          <p class="text-white/70 text-sm">I enrolled in BSIT specialized in Web and Mobile App Development. I encountered programming languages like Python, C++, and Java.</p>
+        </div>
+      </div>
+
+      <!-- 2023 -->
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-6" data-aos="fade-right" data-aos-delay="500">
+        <div class="text-2xl font-bold text-cyan-400 min-w-[80px] text-center md:text-right drop-shadow-[0_0_15px_#00ffff]">2023</div>
+        <div class="bg-white/10 border-r-4 border-cyan-400 p-6 rounded-lg backdrop-blur-md max-w-md">
+          <h3 class="text-white font-semibold text-xl mb-2">🧑‍💼 Became My Group's Project Manager</h3>
+          <p class="text-white/70 text-sm">I led our team "CodeBrew" as the Project Manager during our thesis. It strengthened my public speaking and leadership skills.</p>
+        </div>
+      </div>
+
+      <!-- 2024 -->
+      <div class="flex flex-col md:flex-row-reverse items-center md:items-start gap-6" data-aos="fade-left" data-aos-delay="600">
+        <div class="text-2xl font-bold text-cyan-400 min-w-[80px] text-center md:text-left drop-shadow-[0_0_15px_#00ffff]">2024</div>
+        <div class="bg-white/10 border-l-4 border-cyan-400 p-6 rounded-lg backdrop-blur-md max-w-md">
+          <h3 class="text-white font-semibold text-xl mb-2">🚀 First Web and Mobile App Deployment</h3>
+          <p class="text-white/70 text-sm">I deployed my first web and mobile app for our client, buying a domain and hosting for it. We successfully defended the project and were nominated for 8 awards!</p>
+        </div>
+      </div>
+
+      <!-- 2025 -->
+      <div class="flex flex-col md:flex-row items-center md:items-start gap-6" data-aos="fade-left" data-aos-delay="700">
+        <div class="text-2xl font-bold text-cyan-400 min-w-[80px] text-center md:text-right drop-shadow-[0_0_15px_#00ffff]">2025</div>
+        <div class="bg-white/10 border-r-4 border-cyan-400 p-6 rounded-lg backdrop-blur-md max-w-md">
+          <h3 class="text-white font-semibold text-xl mb-2">🌍 Internship at World Vision Philippines</h3>
+          <p class="text-white/70 text-sm">I landed my internship at World Vision, contributing my IT skills to support children in need. Their mission aligned with my passion for using technology to make a positive impact.</p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+</section>
+
+
+</section>
+
+
+<section id="skills" class="py-20 px-6 md:px-24 relative">
+
+  <h2 class="pt-10 text-center text-4xl font-extrabold text-cyan-400 drop-shadow-[0_0_20px_#00ffff] tracking-widest uppercase">SKILLS</h2>
   <p class="pt-10 text-center text-white text-lg drop-shadow-[0_0_10px_#00ffff] mb-10">
-    I am a student who likes to explore new things. I'm also the Lead Developer and Project Manager of our group called CodeBrew.
+  
   </p>
 
   <div class="flex flex-col lg:flex-row justify-center items-center gap-12 relative">
@@ -179,16 +271,15 @@
 
 
 
+
 <section id="certifications" class="relative px-6 py-12 bg-black">
 
   <div class="w-full max-w-7xl mx-auto"
   data-aos="fade-top"
         data-aos-delay="100"
         data-aos-duration="800">
-    <h2 class="pt-10 text-center text-3xl text-cyan-400 mb-4 font-semibold drop-shadow-[0_0_10px_#00ffff]">
-      My Certifications
-    </h2>
-    <p class="text-center text-white text-lg drop-shadow-[0_0_5px_#00ffff]">
+   <h2 class="pt-10 text-center text-4xl font-extrabold text-cyan-400 drop-shadow-[0_0_20px_#00ffff] tracking-widest uppercase">Certifications</h2>
+    <p class="pt-10 text-center text-white text-lg drop-shadow-[0_0_5px_#00ffff]">
       Throughout my college, I took several certifications to further enhance my skills. Here they are:
     </p>
 
@@ -305,10 +396,8 @@
 
 
   <div class="w-full max-w-7xl mx-auto">
-    <h2 class="pt-10 text-center text-3xl text-cyan-400 mb-4 font-semibold drop-shadow-[0_0_10px_#00ffff]">
-      My Projects
-    </h2>
-    <p class="text-center text-white text-lg drop-shadow-[0_0_5px_#00ffff] mb-10">
+  <h2 class="pt-10 text-center text-4xl font-extrabold text-cyan-400 drop-shadow-[0_0_20px_#00ffff] tracking-widest uppercase">PROJECTS</h2>
+    <p class="pt-10 text-center text-white text-lg drop-shadow-[0_0_5px_#00ffff] mb-10">
       Here's a showcase of some of the projects I worked on throughout college:
     </p>
 

@@ -9,10 +9,17 @@
     <link rel="icon" href="{{ asset('public/images/image.png') }}" type="image/png">
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://kit.fontawesome.com/0a5161f91a.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
     <style>
       * {
         scroll-behavior: smooth;
+        
       }
+     body {
+  font-family: var(--font-sans);
+  font-style: normal;
+}
 
       #typing-text::after {
         content: "|";
@@ -96,7 +103,7 @@
   <div class="flex flex-col items-center justify-center h-full space-y-8 text-center px-4">
     <a href="#landing" class="text-white-300 font-extrabold text-xl hover:text-white drop-shadow-[0_0_8px_#0ff]">Home</a>
     <a href="#about" class="text-white-300 font-extrabold text-xl hover:text-white drop-shadow-[0_0_8px_#0ff]">About Me</a>
-    <a href="#skills" class="nav-link text-white font-bold hover:text-cyan-300">Skills</a>
+    <a href="#skills" class="text-white-300 font-extrabold text-xl hover:text-white drop-shadow-[0_0_8px_#0ff]">Skills</a>
     <a href="#certifications" class="text-white-300 font-extrabold text-xl hover:text-white drop-shadow-[0_0_8px_#0ff]">Certifications</a>
     <a href="#projects" class="text-white-300 font-extrabold text-xl hover:text-white drop-shadow-[0_0_8px_#0ff]">Projects</a>
     <a href="#contact" class="text-white-300 font-extrabold text-xl hover:text-white drop-shadow-[0_0_8px_#0ff]">Contact Me</a>
@@ -121,17 +128,25 @@
     <!-- Image Section -->
     <div class="flex-1 flex items-center justify-center relative" data-aos="fade-down-left" data-aos-delay="200" data-aos-duration="800">
       <div class="absolute w-[300px] sm:w-[400px] h-[300px] sm:h-[400px] rounded-full bg-cyan-400/30 blur-3xl z-0"></div>
-      <img src="{{ asset('public/images/image.png') }}" alt="Profile Photo" class="drop-fade delay-4 w-72 h-72 sm:w-96 sm:h-96 md:w-[420px] md:h-[420px] rounded-2xl object-cover relative z-10 animate-float" />
+     <img src="{{ asset('public/images/anim5.gif') }}" alt="Profile Photo" class="drop-fade delay-4 w-72 h-72 sm:w-96 sm:h-96 md:w-[520px] md:h-[520px] rounded-2xl object-cover relative z-10 animate-float" />
     </div>
   </div>
 </section>
+<div class="w-full max-w-7xl mx-auto px-6 md:px-8">
+  <div class="relative w-full h-[2px] my-10">
+    <div class="absolute inset-0 bg-cyan-400 blur-sm"></div>
+    <div class="absolute inset-0 bg-cyan-400 blur"></div>
+    <div class="relative bg-cyan-400 h-[2px]"></div>
+  </div>
+</div>
+
 
 <section id="about" class="py-20 px-6 md:px-24 relative overflow-x-hidden">
 
   <h2 class="pt-10 text-center text-4xl font-extrabold text-cyan-400 drop-shadow-[0_0_20px_#00ffff] tracking-widest uppercase">About Me</h2>
   
   <p class="pt-10 text-center text-white text-lg drop-shadow-[0_0_10px_#00ffff] mb-20 max-w-4xl mx-auto">
-    Welcome to my journey. Since 2010, I’ve been navigating the evolving world of technology — growing from a curious explorer to a dedicated developer and leader. This is just the beginning.
+    Welcome to my journey, scroll down to get to know me better.
   </p>
 
   <!-- Roadmap Line -->
@@ -212,7 +227,14 @@
 </section>
 
 
-</section>
+<div class="w-full max-w-7xl mx-auto px-6 md:px-8">
+  <div class="relative w-full h-[2px] my-10">
+    <div class="absolute inset-0 bg-cyan-400 blur-sm"></div>
+    <div class="absolute inset-0 bg-cyan-400 blur"></div>
+    <div class="relative bg-cyan-400 h-[2px]"></div>
+  </div>
+</div>
+
 
 
 <section id="skills" class="py-20 px-6 md:px-24 relative">
@@ -270,6 +292,13 @@
 
 
 
+<div class="w-full max-w-7xl mx-auto px-6 md:px-8">
+  <div class="relative w-full h-[2px] my-10">
+    <div class="absolute inset-0 bg-cyan-400 blur-sm"></div>
+    <div class="absolute inset-0 bg-cyan-400 blur"></div>
+    <div class="relative bg-cyan-400 h-[2px]"></div>
+  </div>
+</div>
 
 
 <section id="certifications" class="relative px-6 py-12 bg-black">
@@ -390,6 +419,15 @@
     </div>
   </div>
 </section>
+<div class="w-full max-w-7xl mx-auto px-6 md:px-8">
+  <div class="relative w-full h-[2px] my-10">
+    <div class="absolute inset-0 bg-cyan-400 blur-sm"></div>
+    <div class="absolute inset-0 bg-cyan-400 blur"></div>
+    <div class="relative bg-cyan-400 h-[2px]"></div>
+  </div>
+</div>
+
+
 
 <section id="projects" class="relative px-6 py-12 bg-black">
   <!-- Neon Bar Left -->
@@ -543,32 +581,23 @@
 <script>
   AOS.init();
 </script>
-
 <script>
 document.addEventListener('DOMContentLoaded', () => {
-  // Drop-fade Intersection Observer
   const observer = new IntersectionObserver(entries => {
     entries.forEach(entry => {
       if (entry.isIntersecting) {
-        // Handle .drop-fade animation
         if (entry.target.classList.contains('drop-fade')) {
           entry.target.classList.add('in-view');
         }
-
-        // Handle .cert-card animation
         if (entry.target.classList.contains('cert-card')) {
           entry.target.classList.add('animate');
           entry.target.classList.remove('hidden');
         }
-
-        observer.unobserve(entry.target); // Animate once
+        observer.unobserve(entry.target);
       }
     });
-  }, {
-    threshold: 0.6 // Better trigger when 60% visible
-  });
+  }, { threshold: 0.6 });
 
-  // Observe .drop-fade inside about and landing only
   ['#landing', '#about'].forEach(sectionId => {
     const section = document.querySelector(sectionId);
     if (section) {
@@ -576,7 +605,6 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
-  // Observe .cert-card and apply alternating classes
   document.querySelectorAll('.cert-card').forEach((card, index) => {
     card.classList.add(index % 2 === 0 ? 'from-left' : 'from-right');
     observer.observe(card);
@@ -648,6 +676,13 @@ document.addEventListener('DOMContentLoaded', () => {
   let mouse = { x: width / 2, y: height / 2 };
   let mouseParticles = [];
   let floatingParticles = [];
+  let shootingStars = [];
+  let shootingStarParticles = [];
+
+  let isPageVisible = true;
+  document.addEventListener('visibilitychange', () => {
+    isPageVisible = document.visibilityState === 'visible';
+  });
 
   for (let i = 0; i < 100; i++) {
     floatingParticles.push({
@@ -676,10 +711,29 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   });
 
+  function spawnShootingStar() {
+    shootingStars.push({
+      x: Math.random() * width,
+      y: 0,
+      alpha: 1,
+      radius: Math.random() * 3 + 2,
+      dy: Math.random() * 2 + 1,
+      dx: (Math.random() - 0.5) * 2,
+      color: Math.random() > 0.5 ? '#00ffff' : '#007bff',
+      life: 0
+    });
+  }
+
+  setInterval(() => {
+    if (isPageVisible) { // only spawn if page is active
+      spawnShootingStar();
+    }
+  }, 1500);
+
   function draw() {
     ctx.clearRect(0, 0, width, height);
 
-    // Floating particles
+    // Floating background particles
     for (let p of floatingParticles) {
       ctx.beginPath();
       ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
@@ -695,6 +749,45 @@ document.addEventListener('DOMContentLoaded', () => {
       if (p.y < 0 || p.y > height) p.dy *= -1;
     }
 
+    // Move shooting stars
+    for (let i = 0; i < shootingStars.length; i++) {
+      let star = shootingStars[i];
+
+      for (let j = 0; j < 2; j++) {
+        shootingStarParticles.push({
+          x: star.x,
+          y: star.y,
+          alpha: 1,
+          radius: Math.random() * 2 + 1,
+          color: star.color
+        });
+      }
+
+      star.x += star.dx;
+      star.y += star.dy;
+      star.life++;
+
+      if (star.y > height || star.x < 0 || star.x > width || star.life > 200) {
+        shootingStars.splice(i, 1);
+        i--;
+      }
+    }
+
+    // Draw shooting star trail particles
+    for (let i = 0; i < shootingStarParticles.length; i++) {
+      let p = shootingStarParticles[i];
+      ctx.beginPath();
+      ctx.arc(p.x, p.y, p.radius, 0, Math.PI * 2);
+      ctx.fillStyle = `rgba(${p.color === '#007bff' ? '0,123,255' : '0,255,255'},${p.alpha})`;
+      ctx.shadowColor = p.color;
+      ctx.shadowBlur = 10;
+      ctx.fill();
+
+      p.alpha -= 0.02;
+      p.radius *= 0.98;
+    }
+    shootingStarParticles = shootingStarParticles.filter(p => p.alpha > 0);
+
     // Mouse trail
     for (let i = 0; i < mouseParticles.length; i++) {
       let p = mouseParticles[i];
@@ -709,7 +802,6 @@ document.addEventListener('DOMContentLoaded', () => {
       p.y -= 0.5;
       p.radius *= 0.98;
     }
-
     mouseParticles = mouseParticles.filter(p => p.alpha > 0);
 
     requestAnimationFrame(draw);
@@ -718,6 +810,7 @@ document.addEventListener('DOMContentLoaded', () => {
   draw();
 });
 </script>
+
 
 
 </body>
